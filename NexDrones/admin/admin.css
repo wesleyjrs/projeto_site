@@ -1,0 +1,137 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+/* fundo tela login */
+#fundo{
+    background-image: url("../views/imagens/adminFundo.webp") ;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+}
+/* sombra tela login */
+#sombra{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); 
+    position: absolute;
+}
+/* tela login */
+#box_login_admin{
+    width: 500px;
+    height: 320px;
+    background-color: #fff;
+    border-radius: 15px;
+    position: relative;
+    top: 30%;
+    margin: 0 auto;
+}
+
+#logo{
+    position: relative;
+    top: 5px;
+    left: 143px;
+}
+
+#login_admin{
+    padding: 50px;
+    font-weight: bold;
+    position: relative;
+    bottom: 30px;
+}
+
+#esque_senha{
+    position: absolute;
+    right: 50px;
+    font-size: 14px;
+}
+
+#btn_entrar{
+    position: absolute;
+    left: 50px;
+    bottom: 0px;
+}
+
+#navbarNavAltMarkup{
+    position: absolute;
+    right: 40px;
+}
+/* fim tela login */
+/* nav admin */
+#nav_vertical{
+    margin-top: 2px;
+    position: fixed;
+    left: -160px;
+    background-color: rgb(52, 58, 64);
+    width: 200px;
+    height: 100%;
+    transition: all 400ms linear;
+    
+}
+/* nav vertical */
+#nav_vertical{
+    position: fixed;
+    left: 0;
+    top: 53px;
+}
+/* #nav_vertical.active{
+    left: 0px;
+} */
+
+#nav_vertical a{
+    text-decoration: none;
+}
+#nav_vertical ul{
+    padding: 0;
+}
+
+#li_principal{
+    height: 125px;
+}
+#nav_vertical ul li{
+    color: #fff;
+    list-style: none;
+    padding: 15px 10px ;
+    border-bottom: 1px solid rgba(100, 100, 100, 0.4);
+}
+
+.toggle_btn{
+    position: relative;
+    left: 157px;
+    display: none;
+}
+
+#logo_user{
+    width: 65px;
+    position: absolute;
+    left: 68px;
+    top: 20px;
+}
+
+#usuario_atual{
+    position: relative;
+    top: 75px;
+    text-align: center;
+}
+/* ------fim nav vertival-------- */
+
+#box_esqueci_senha{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 25;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#link_esqueceu_senha{
+    position: relative;
+    bottom: 23px;
+    font-size: 15px;
+}

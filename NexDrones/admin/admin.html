@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Admin | NexDrones</title>
+        <link rel="stylesheet" href="../views/lib/bootstrap/css/bootstrap-reboot.min">
+        <link rel="stylesheet" href="admin.css">
+        <script type="text/javascript" src="../views/home.js"></script>
+    </head>
+    <body id="fundo">
+        <div id="sombra">
+        <div class="container" id="box_login_admin" >
+            <img src="../views/imagens/logo-admin3.png" alt="Logo nexdrones" id="logo">
+
+            <form method="post" id="login_admin">
+                    <div class="form-group">
+                      <div>
+                        <input type="email" class="form-control form-control-md" id="email_admin" aria-describedby="emailHelp" placeholder="Digite seu email">
+                      </div>
+                    </div>
+                    <div class="form-group">
+                        <div>
+                            <input type="password" class="form-control form-control-md" id="senha_admin" placeholder="Digite sua senha">
+                        </div>
+                    </div>
+                    <a href="#" id="link_esqueceu_senha" data-toggle="modal" data-target="#exampleModalCenter">Esqueceu a senha?</a>
+                    <a href="index_admin.html"><button type="button" class="btn btn-primary btn-md" id="btn_entrar">Entrar</button></a>
+            </form>
+        </div>
+      <!-- Modal esqueci a senha -->
+      <div class="modal fade" id="box_esqueci_senha" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Recuperar Senha</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <form  method="post">
+                    <div class="form-group">
+                        <label for="email_recuperar_senha" class="label_login">Informe seu email para recuperação de senha.</label> 
+                        <input type="email" class="form-control" id="email_recuperar_senha" aria-describedby="emailHelp" placeholder="Digite seu email">
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </div>
+       <!-- fim modal -->
+        
+    </div>
+        <script src="../views/lib/jquery/jquery.min"></script>
+        <script src="../views/lib/bootstrap/js/bootstrap.min.js"></script>
+    </body>
+</html>

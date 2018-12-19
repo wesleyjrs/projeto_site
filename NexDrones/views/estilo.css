@@ -1,0 +1,460 @@
+/*-----inicio body -----*/
+body{ 
+    background-image: url("imagens/fundo.jpg");
+    position: relative;
+}
+#sombreamento{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(27, 27, 27, 0.6);
+    position: absolute;
+    z-index: 10;
+    display: none;
+    margin-top: -50px;
+}
+/*-----fim bory-----*/
+/*----- inicio logo -----*/
+#logo-nexdrones{
+    position: relative;
+    top: 20px;
+    left: 60px;
+}
+/*-----fim logo -----*/
+/*----- inicio navBar -----*/
+.navbar_principal{
+    width: 100%;
+    height: 84px;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: fixed;
+    top: 0;
+    z-index: 3;
+}
+#listaMenu{
+    position: absolute;
+    right: 160px;
+    top: 5px;
+    list-style: none;
+    padding: 0;
+    font-size: 17px;
+    
+}
+
+#listaMenu li{
+    display: inline-block;
+    margin: 15px 8px;
+}
+#listaMenu li a{
+    text-decoration: none; 
+    padding: 10px; 
+    color: #1483c5;  
+}
+#listaMenu li a:hover{
+    background-color: #1483c5;   
+    color: #fff;
+    border-radius: 10px;
+}
+
+#login_cad{
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    background-color: #fff;
+    padding: 20px;
+    border: 2px solid rgba(141, 139, 139, 0.53);
+    border-radius: 20px;
+
+}
+
+#box_login{
+    width: 300px;
+    height: 280px;
+    border: 1px solid #747272;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 64px;
+    background-color: #fff;
+    right: 15px;
+    z-index: 20;
+}
+
+.centralizar{
+    margin:0 auto;
+    padding: 20px;
+}
+
+#sub_menu{
+    width: 200px;
+    height: 280px;
+    border: 1px solid #747272;
+    padding: 10px;
+    border-radius: 15px;
+    margin-top: 64px;
+    background-color: #fff;
+    position: fixed;
+    right: 50px;
+    z-index: 20;
+    display: none;
+}
+
+#tituloForm{
+    color: #1483c5;  
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.label_estilo{
+    font-size: 14px;
+    margin-bottom: 0;  
+    color: #1483c5;  
+    font-weight: bold; 
+}
+
+#link_esqueceu_senha{
+    position: relative;
+    bottom: 23px;
+    font-size: 15px;
+}
+
+#box_esqueci_senha{
+    width: 500px;
+    height: 300px;
+    background-color: #fff;
+    display: none;
+    position: fixed;
+    top: 20%;
+    left: 30%;
+    z-index: 25;
+    border-radius: 15px;
+    padding: 20px;
+}
+
+#titulo_recup_senha{
+    color: #1483c5;  
+    text-align: center;
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 30px;    
+}
+
+#btn_recuperar_senha{
+    position: absolute;
+    top: 70%;
+    left: 40%;
+}
+
+#btn_fechar_box_recup_senha{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.btnsLogin{
+    margin: 0 auto;
+}
+#logar{
+    margin-right: 15px;
+}
+
+/*-----fim navBar -----*/
+/*----- inicio logo -----*/
+#div_login{
+    position: absolute;
+    right: 15px;
+    top: 5px;
+}
+
+#icone_login{
+    margin-left: 45px;
+}
+
+.link_login_cadastrar a{
+    padding: 0;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+#seja_bem_vindo{
+    position: relative;
+    left: 10px;
+}
+#entre_cadastro{
+    position: relative;
+    bottom: 5px;
+}
+/*-----fim logo -----*/
+/*----- inicio titulos home -----*/
+.pre_titulo{
+    font-size:15px;
+    color:#a8a8a8;
+    text-align:center;
+    margin-top: 120px;
+    margin-bottom: -14px;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+}
+.titulo{
+    font-size: 42px;
+    font-family: Roboto,Arial, Helvetica, sans-serif;
+    text-align:center;
+    color: #1483c5;
+    font-weight: 750;
+    padding: 0;
+}
+.img_titulos{
+    width: 198px;
+    height: 30px;
+    margin: 0 auto;
+    margin-top: -7px;
+    margin-bottom: 50px;
+}
+/*----- fim titulos home -----*/
+#imgTeste{
+    position: relative;
+    top: 84px;
+    margin-bottom: 130px;
+}
+
+#corpo{
+    width: 100%;/**/
+    height: 400px;
+    margin: 0 auto;
+}
+
+#corpo a{
+    text-decoration: none;
+    color: #1483c5;
+}
+
+#icon_youtube{
+    margin-top: 20px;
+}
+/* ---------inicio serviços-------------- */
+
+.item_banner{
+    width: 95%;
+    height: 400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    /* background-color: #888484; */
+    
+    background: linear-gradient(140deg, #fff 45%, rgba(220, 220, 220, 0.8) 45%);
+}
+
+.img_banner_servicos{
+    margin-top: 27px;
+    margin-left: 27px;
+    border-radius: 25px;
+}
+.img_banner_servicosD{
+    margin-top: 27px;
+    margin-right: 150px;
+    border-radius: 25px;
+}
+.titulo_banner_servico{
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.text_banner_servicos{
+    text-align: justify;
+    margin:50px 50px 0 30px;
+}
+
+.espaco{
+    margin-top: 30px;
+}
+
+
+
+/* .img_banner{
+    background-color: #fff;
+    border-radius: 10px;
+    width: 200px;
+    margin: 30px;
+} */
+/* ----fim serviços--------------- */
+/* ----------inicio portifólio------------- */
+
+#cards{
+    margin:0 auto;
+
+}
+
+.img_card{
+    padding: 10px;
+}
+
+/* ----------fim portifólio------------- */
+
+.descricao_icones{
+    text-align: center;
+    font-size: 20px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+/* ----- inicio banner clientes */
+#bannerClientes{
+    width: 100%;
+    height: 853px;
+    margin-bottom: 250px;
+
+}
+
+#blocoClientes{
+    position: relative;
+    top: 230px;
+}
+/* ----- fim banner clientes */
+.iconSociais{
+    display: inline-block;
+    padding: 0 100px;
+}
+
+#tituloTeste{
+    color: red;
+}
+
+/* -----inicio rodape----- */
+.rodape{
+    color: #FFFFFF;
+    padding-top: 50px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#rodape_conteudo{
+    color: #888484;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.titulos_rodape{
+    font-size: 17px;
+}
+
+.logo-redes{
+    width: 32px;
+    height: 32px;
+    display: inline-block;
+    margin-right: 10px;
+}
+#facebook{
+    background-image: url("imagens/icones/facebook.png");
+}
+#instagram{
+    background-image: url("imagens/icones/instagram.png");
+}
+#linkedin{
+    background-image: url("imagens/icones/linkedin.png");
+}
+#youtube{
+    background-image: url("imagens/icones/youtube.png");
+}
+#footer_principal{
+    height: 320px;
+    background-color: #353535;
+}
+#footer_secundario{
+    height: 51px;
+    background-color: #1D1D1D;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+    padding-top: 19px;
+}
+
+#expediente{
+    margin-top: 15px;
+    color: #fff;
+}
+/* -----fim rodape----- */
+
+/* ----inicio sobre----------- */
+#corpoSobre{
+    width: 100%;
+    height: 300px;
+}
+
+#imgSobreNos{
+    width: 100%;
+    margin: 84px 0 80px 0;
+}
+
+#textoSobre{
+    width: 900px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-align: justify;
+}
+/* ------ fim sobre ----------- */
+
+
+/* ----------pagina cadastro-------- */
+#cadastro_usuario{
+    width: 800px;
+    height: 1110px;
+    margin: 0 auto;
+    border: 2px solid rgba(53, 53, 53, 0.6);
+    border-radius: 15px;
+    background-color: #fff;
+    position: relative;
+    top: 150px;
+    padding: 40px;
+}
+
+#btn_cadastro{
+    text-align: center;
+    margin-top: 25px;
+}
+
+/* teste */
+.zoom:hover {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* --------------------------- */
+/* #form_pessoa_fisica{
+    display: none;
+} */
+#form_pessoa_juridica{
+    display: none;
+    
+}
+
+#div_tipo_pessoa{
+    margin-left: 184px;
+    margin-top: -35px;
+}
+#pj{
+    margin-left: 50px;
+}
+
+#titulo_forms{
+    margin: 40px;
+}
+/* *******pagina minha conta usuario******* */
+.conta{
+    width: 600px;
+    height: 300px;
+    margin: 20px;
+    background: #fff;
+    border-radius: 25px;
+    border: 1px solid rgba(172, 168, 168, 0.54);
+}
+
+.cabecalho{
+    background: #353535;
+    position: absolute;
+    width: 599px;
+    height: 40px;
+    border-radius: 25px 25px 0 0;
+}
+
+/* ****************************** */
