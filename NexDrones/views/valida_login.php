@@ -31,14 +31,13 @@ require 'db_connection.php';
         //Limpa
         unset ($_SESSION['email']);
         unset ($_SESSION['senha']);
-    //    $_SESSION['mensagem'] = 'usuario ou senha invalido!';
+         $_SESSION['mensagem'] = 'usuario ou senha invalido!';
     
         //Redireciona para a página de autenticação
         header('location:login_cad.php');
     
 	
 }
-$_SESSION['mensagem'] = 'usuario ou senha invalido!';
 
 
 

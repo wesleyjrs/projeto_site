@@ -1,3 +1,7 @@
+<?php 
+ 
+?>
+
 <html lang="en">
     <head>
         <meta charset="UTF-8">
@@ -51,7 +55,13 @@
           </ul>
         </div>
         <div style="width:500px;margin-left:300px;margin-top:100px;background:rgba(129, 117, 117, 0.71);padding:30px;">
-        
+        <?php
+          // include("upload.php");
+          
+          // if($mgn != false){
+          //   echo "<p> $mgn </p>";
+          // }
+          ?>
         <form action="upload.php" method="post" enctype = "multipart/form-data">
                 <div class="form-group">
                     <label for="img_upload">Selecione</label>

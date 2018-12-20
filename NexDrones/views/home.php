@@ -1,4 +1,6 @@
 <?php
+include("../views/db_connection.php");
+
     session_start();
     
     //Caso o usuário não esteja autenticado, limpa os dados e redireciona
@@ -11,11 +13,11 @@
         unset ($_SESSION['senha']);
         
         //Redireciona para a página de autenticação
-        header('location:login_cad.php');
+        //header('location:login_cad.php');
     }
 
 ?>
-<html lang="en">
+<html >
 
 <head>
     <meta charset="UTF-8">
@@ -38,12 +40,31 @@
             <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel">
                 <div class="carousel-inner">
 
-                    <div class="carousel-item active">
-                        <img class="d-block w-100" src="imagens/carrousel/teste2.jpeg" alt="Second slide">
-                    </div>
-                    <div class="carousel-item ">
-                        <img class="d-block w-100" src="imagens/carrousel/teste5.jpg" alt="Third slide">
-                    </div>
+                <?php 
+                    $controle_ativo = 2;
+                    $resultado_carousel = "SELECT * FROM imagem ORDER BY id ASC";
+                    $result = mysqli_query($conexao, $resultado_carousel);
+
+                    while($row_carousel = mysqli_fetch_assoc($result)) {
+                        if($controle_ativo == 2){?>
+                        <div class="carousel-item active">
+                        <img class="d-block w-100" src="admin/upload/<?php echo $row_carousel['nome_imagem'] ?>" alt="Second slide">
+                    </div><?php
+                        $controle_ativo = 1;
+                    }else{?>
+                        <div class="carousel-item ">
+                        <img class="d-block w-100" src="imagens/carrousel/<?php echo $row_carousel['nome_imagem'] ?>" alt="Third slide">
+                    </div><?php
+
+                    }
+                    }
+                ?>
+
+
+
+
+                    
+                    
                     <div class="carousel-item">
                         <img class="d-block w-100" src="imagens/carrousel/teste3.jpg" alt="First slide">
                     </div>
